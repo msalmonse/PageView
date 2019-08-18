@@ -1,3 +1,3 @@
 # PageView
 
-A description of this package.
+This is a wrapper for UIPageViewController and UIPageControl

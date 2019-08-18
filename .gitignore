@@ -1,5 +1,11 @@
-.DS_Store
-/.build
-/Packages
-/*.xcodeproj
-xcuserdata/
+.DS_store
+
+## User settings
+PageView.xcodeproj/project.xcworkspace/
+PageView.xcodeproj/xcuserdata/
+PageView.xcodeproj/xcshareddata/
+## previews
+PageView/Preview\ Content/
+PageView/iconGen_ColourViewer*/
+# package manager
+.swiftpm
