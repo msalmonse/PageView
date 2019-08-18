@@ -1,3 +1,3 @@
 # PageView
 
-This is a wrapper for UIPageViewController and UIPageControl
+This is a SwiftUI package for UIPageViewController and UIPageControl
