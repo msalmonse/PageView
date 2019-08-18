@@ -8,4 +8,4 @@ PageView.xcodeproj/xcshareddata/
 PageView/Preview\ Content/
 PageView/iconGen_ColourViewer*/
 # package manager
-.swiftpm
+.swiftpm/
