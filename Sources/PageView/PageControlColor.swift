@@ -27,7 +27,7 @@ enum PageControlColor {
     case custom(UIColor)
     case gray(CGFloat)
     case intRGB(Int, Int, Int)
-    
+
     func opacity(_ alpha: CGFloat) -> UIColor { self.uicolor.withAlphaComponent(alpha) }
 
     var uicolor: UIColor {
