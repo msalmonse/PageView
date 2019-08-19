@@ -8,16 +8,6 @@
 import Foundation
 #if canImport(UIKit)
 import UIKit
-#else
-class UIColor: NSObject {
-    var value: Int
-
-    init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) { value = 1 }
-    init(white: CGFloat, alpha: CGFloat) { value = 1 }
-    init(_ i: Int) { value = i }
-    func withAlphaComponent(_ alpha: CGFloat) -> UIColor { return UIColor(0) }
-}
-#endif
 
 fileprivate extension UIColor {
     // init with int values
@@ -54,3 +44,5 @@ enum PageControlColor {
         }
     }
 }
+
+#endif
