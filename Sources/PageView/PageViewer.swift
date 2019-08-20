@@ -1,5 +1,5 @@
 //
-//  PageView.swift
+//  PageViewer.swift
 //  PageViewTest
 //
 //  Created by Michael Salmon on 2019-08-18.
@@ -12,7 +12,7 @@ import Foundation
 import SwiftUI
 
 @available(iOS 13.0, *)
-struct PageView<Page: View>: View {
+struct PageViewer<Page: View>: View {
     var viewControllers: [UIHostingController<Page>]
     @State var currentPage = 0
     let tint: PageControlTint
