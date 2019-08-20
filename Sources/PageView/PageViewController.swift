@@ -16,9 +16,9 @@ public struct PageViewController: UIViewControllerRepresentable {
     var controllers: [UIViewController]
     @Binding var currentPage: Int
     
-    func makeCoordinator() -> Coordinator { Coordinator(self) }
+    public func makeCoordinator() -> Coordinator { Coordinator(self) }
 
-    func makeUIViewController(context: Context) -> UIPageViewController
+    public func makeUIViewController(context: Context) -> UIPageViewController
     {
         let controller = UIPageViewController(
             transitionStyle: .scroll,
@@ -30,21 +30,21 @@ public struct PageViewController: UIViewControllerRepresentable {
         return controller
     }
     
-    func updateUIViewController(_ controller: UIPageViewController, context: Context) {
+    public func updateUIViewController(_ controller: UIPageViewController, context: Context) {
         controller.setViewControllers(
             [controllers[currentPage]],
             direction: .forward, animated: true
         )
     }
     
-    class Coordinator: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+    public class Coordinator: NSObject, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
         var parent: PageViewController
         
         init(_ controller: PageViewController) {
             self.parent = controller
         }
 
-        func pageViewController(
+        public func pageViewController(
             _ controller: UIPageViewController,
             viewControllerBefore view: UIViewController
         ) -> UIViewController?
@@ -56,7 +56,7 @@ public struct PageViewController: UIViewControllerRepresentable {
             return parent.controllers[index - 1]
         }
 
-        func pageViewController(
+        public func pageViewController(
             _ controller: UIPageViewController,
             viewControllerAfter view: UIViewController
         ) -> UIViewController?
@@ -68,7 +68,7 @@ public struct PageViewController: UIViewControllerRepresentable {
             return parent.controllers[index + 1]
         }
         
-        func pageViewController(
+        public func pageViewController(
             _ controller: UIPageViewController,
             didFinishAnimating finished: Bool,
             previousViewControllers: [UIViewController],

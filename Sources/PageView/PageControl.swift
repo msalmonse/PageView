@@ -24,9 +24,9 @@ public struct PageControl: UIViewRepresentable {
         self.tint = tint
     }
     
-    func makeCoordinator() -> Coordinator { Coordinator(self) }
+    public func makeCoordinator() -> Coordinator { Coordinator(self) }
 
-    func makeUIView(context: Context) -> UIPageControl {
+    public func makeUIView(context: Context) -> UIPageControl {
         let control = UIPageControl()
         control.numberOfPages = numberOfPages
         control.addTarget(
@@ -40,11 +40,11 @@ public struct PageControl: UIViewRepresentable {
         return control
     }
     
-    func updateUIView(_ control: UIPageControl, context:Context) {
+    public func updateUIView(_ control: UIPageControl, context:Context) {
         control.currentPage = currentPage
     }
     
-    class Coordinator: NSObject {
+    public class Coordinator: NSObject {
         var control: PageControl
     
         init(_ control: PageControl) { self.control = control }

@@ -18,7 +18,7 @@ public struct PageViewer<Page: View>: View {
     let tint: PageControlTint
     let alignment: Alignment
     
-    init(
+    public init(
         _ views: [Page],
         tint: PageControlTint = .white,
         alignment: Alignment = .bottomTrailing
@@ -28,7 +28,7 @@ public struct PageViewer<Page: View>: View {
         self.tint = tint
     }
 
-    var body: some View {
+    public var body: some View {
         ZStack(alignment: alignment) {
             PageViewController(controllers: viewControllers, currentPage: $currentPage)
             PageControl(
