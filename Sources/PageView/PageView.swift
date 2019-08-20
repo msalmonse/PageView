@@ -6,6 +6,9 @@
 //  Copyright © 2019 mesme. All rights reserved.
 //
 
+import Foundation
+
+#if canImport(UIKit)
 import SwiftUI
 
 struct PageView<Page: View>: View {
@@ -44,4 +47,6 @@ struct PageView_Previews: PreviewProvider {
         PageView([Text("Page 1"), Text("Page 2")])
     }
 }
+#endif
+
 #endif

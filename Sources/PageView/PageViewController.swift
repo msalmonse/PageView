@@ -6,6 +6,9 @@
 //  Copyright © 2019 mesme. All rights reserved.
 //
 
+import Foundation
+
+#if canImport(UIKit)
 import SwiftUI
 
 struct PageViewController: UIViewControllerRepresentable {
@@ -80,3 +83,5 @@ struct PageViewController: UIViewControllerRepresentable {
     }
 
 }
+
+#endif

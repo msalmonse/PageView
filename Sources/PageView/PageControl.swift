@@ -6,6 +6,9 @@
 //  Copyright © 2019 mesme. All rights reserved.
 //
 
+import Foundation
+
+#if canImport(UIKit)
 import SwiftUI
 import UIKit
 
@@ -60,3 +63,5 @@ struct PageControl_Previews: PreviewProvider {
 }
 #endif
 */
+
+#endif
