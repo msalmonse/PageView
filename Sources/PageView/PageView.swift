@@ -11,6 +11,7 @@ import Foundation
 #if canImport(UIKit)
 import SwiftUI
 
+@available(iOS 13.0, *)
 struct PageView<Page: View>: View {
     var viewControllers: [UIHostingController<Page>]
     @State var currentPage = 0
@@ -42,6 +43,7 @@ struct PageView<Page: View>: View {
 }
 
 #if DEBUG
+@available(iOS 13.0, *)
 struct PageView_Previews: PreviewProvider {
     static var previews: some View {
         PageView([Text("Page 1"), Text("Page 2")])

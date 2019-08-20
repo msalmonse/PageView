@@ -12,6 +12,7 @@ import Foundation
 import SwiftUI
 import UIKit
 
+@available(iOS 13.0, *)
 struct PageControl: UIViewRepresentable {
     let numberOfPages: Int
     @Binding var currentPage: Int
