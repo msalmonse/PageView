@@ -46,7 +46,7 @@ struct PageViewer<Page: View>: View {
 @available(iOS 13.0, *)
 struct PageView_Previews: PreviewProvider {
     static var previews: some View {
-        PageView([Text("Page 1"), Text("Page 2")])
+        PageViewer([Text("Page 1"), Text("Page 2")])
     }
 }
 #endif
