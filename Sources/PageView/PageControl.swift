@@ -13,7 +13,7 @@ import SwiftUI
 import UIKit
 
 @available(iOS 13.0, *)
-struct PageControl: UIViewRepresentable {
+public struct PageControl: UIViewRepresentable {
     let numberOfPages: Int
     @Binding var currentPage: Int
     let tint: PageControlTint

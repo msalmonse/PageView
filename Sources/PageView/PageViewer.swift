@@ -12,7 +12,7 @@ import Foundation
 import SwiftUI
 
 @available(iOS 13.0, *)
-struct PageViewer<Page: View>: View {
+public struct PageViewer<Page: View>: View {
     var viewControllers: [UIHostingController<Page>]
     @State var currentPage = 0
     let tint: PageControlTint

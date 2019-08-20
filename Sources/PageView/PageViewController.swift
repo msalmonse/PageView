@@ -12,7 +12,7 @@ import Foundation
 import SwiftUI
 
 @available(iOS 13.0, *)
-struct PageViewController: UIViewControllerRepresentable {
+public struct PageViewController: UIViewControllerRepresentable {
     var controllers: [UIViewController]
     @Binding var currentPage: Int
     

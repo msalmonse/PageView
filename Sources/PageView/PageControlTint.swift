@@ -18,7 +18,7 @@ fileprivate extension UIColor {
     }
 }
 
-enum PageControlTint {
+public enum PageControlTint {
     case red
     case green
     case blue
